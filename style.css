@@ -1,3 +1,28 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Extrabold.otf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Heavy.otf);
+}
+@font-face {
+    font-family: Aldrich;
+    src: url(./Aldrich-Regular.ttf);
+}
+@font-face {
+    font-family: baunk;
+    src: url(./Baunk.ttf);
+}
+@font-face {
+    font-family: bruno ace;
+    src: url(./Bruno\ Ace\ Regular.ttf);
+}
+@font-face {
+    font-family: Bungee;
+    src: url(./Bungee-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -93,7 +118,7 @@ body {
 }
 
 #page1 #eventdate {
-    font-family: Bruno Ace;
+    font-family: bruno Ace;
     color: #000;
     font-size: 10.8vw;
     font-weight: 200;
@@ -669,7 +694,7 @@ form button{
     }
 
     #page1 #eventdate {
-        font-family: Bruno Ace;
+        font-family: bruno Ace;
         color: #000;
         font-size: 14vw;
         font-weight: 200;
