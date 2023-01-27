@@ -83,6 +83,7 @@ body {
     -webkit-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
     transition: all linear 0.3s;
+    cursor: pointer;
 }
 
 #nav h5 {
@@ -90,6 +91,13 @@ body {
     cursor: pointer;
     font-weight: 600;
     /* text-transform: lowercase; */
+    transition: all ease 0.2s;
+}
+#nav h5:hover{
+    color: #555;
+}
+#nav h5:active{
+    scale: 0.95;
 }
 
 #nav button {
@@ -103,8 +111,13 @@ body {
     box-shadow: 0 2px 18px -15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     color: #fff;
+    transition: all ease 0.2s;
+
 }
 
+#nav button:active{
+    scale: 0.92;
+}
 #nav>img {
     height: 50px;
 }
@@ -319,7 +332,7 @@ body {
 #infinite {
     padding: 2.2vw 0;
     /* overflow-y: hidden; */
-    overflow-x: auto;
+    /* overflow-x: auto; */
     /* background-color: red; */
     white-space: nowrap;
     position: relative;
@@ -629,9 +642,6 @@ span.hightlight {
     font-size: 1.2vw;
 }
 
-#page6 form #participant-names {
-    /* background-color: red; */
-}
 
 #participant-names>h2 {
     background-color: #73BB90;
@@ -772,7 +782,7 @@ span.hightlight {
 
 form button {
     text-align: center;
-    background-color: #73cd97;
+    background-color: rgb(73, 198, 106);
     border: none;
     padding: 1vw 2vw;
     border-radius: 50px;
@@ -784,8 +794,11 @@ form button {
     -webkit-box-shadow: 0 2px 18px -15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 18px -15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-
+    transition: all ease 0.2s;
     color: #fff;
+}
+form button:active{
+    scale: 0.92;
 }
 
 #required-p::after {
@@ -1072,7 +1085,7 @@ form button {
     #infinite {
         padding: 3.5vw 0;
         /* overflow-y: hidden; */
-        overflow-x: auto;
+        /* overflow-x: auto; */
         /* background-color: red; */
         white-space: nowrap;
         position: relative;
@@ -1338,9 +1351,6 @@ form button {
         font-size: 2.2vw;
     }
 
-    #page6 form #participant-names {
-        /* background-color: red; */
-    }
 
     #participant-names>h2 {
         background-color: #73BB90;

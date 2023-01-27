@@ -49,6 +49,9 @@
   document.querySelector("#nav button").addEventListener("click", function () {
     locoScroll.scrollTo(2135,2130)
   });
+  document.querySelector("#nav img").addEventListener("click", function () {
+    locoScroll.scrollTo(0,0)
+  });
 })();
 
 const random_char = () => {
