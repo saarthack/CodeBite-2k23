@@ -56,11 +56,23 @@ body {
     width: 100%;
 }
 
+body{
+    scroll-behavior: smooth;
+}
 #main {
     overflow-x: hidden;
     position: relative;
     width: 100%;
     background-color: #FAFAFA;
+}
+
+body::-webkit-scrollbar{
+    background-color: #FAFAFA;
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(65, 65, 65, 0.288);
+    border-radius: 50px;
 }
 
 #nav {
@@ -421,11 +433,17 @@ body {
 }
 
 #page4 h3 {
-    font-size: 6.8vw;
+    font-size: 4.5vw;
     text-transform: uppercase;
-    line-height: 9.5vw;
+    line-height: 4.8vw;
+    color: #fff;
     font-weight: 900;
+    background-color: #73BB90;
+    width: 63%;
     margin-left: 7vw;
+    margin-top: 3vw;
+    padding: 1.1vw 2vw;
+    border-radius: 10px;
 }
 
 #participation-video-box {
@@ -436,10 +454,12 @@ body {
 }
 
 #page5 {
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
     padding: 1vw 7vw;
     position: relative;
+    background-image: url(./prizes.png);
+    background-size: cover;
 }
 
 #page5 h1 {
@@ -1050,7 +1070,7 @@ form button:active{
         /* height: 15vw; */
         /* background-color: blue; */
         position: absolute;
-        top: 90vw;
+        top: 88vw;
         padding: 3vw 0;
         white-space: nowrap;
         overflow-y: hidden;
@@ -1151,11 +1171,15 @@ form button:active{
     }
 
     #page4 h3 {
-        font-size: 7.1vw;
+        font-size: 5.9vw;
         text-transform: uppercase;
-        line-height: 9.5vw;
+        line-height: 7.5vw;
         margin-top: 4vw;
+        width: 84%;
+
+        border-radius: 5px;
         font-weight: 900;
+        padding: 1.5vw 4vw;
         margin-left: 7.5vw;
     }
 
@@ -1170,9 +1194,11 @@ form button:active{
     #page5 {
         min-height: 100vh;
         width: 100%;
-        /* background-color: red; */
+        margin-bottom: 5vw;
         padding: 1vw 7vw;
         position: relative;
+        background-image: url(./prizes-p.png);
+        background-size: cover;
     }
 
     #page5 h1 {
@@ -1267,7 +1293,7 @@ form button:active{
         width: 100%;
         /* background-color: red; */
         position: relative;
-        padding: 2vw 6vw;
+        padding: 2vw 5vw;
     }
 
     #page6>h1 {
@@ -1299,7 +1325,7 @@ form button:active{
     }
 
     #page6 form>h3 {
-        font-size: 4.8vw;
+        font-size: 5.1vw;
         font-weight: 700;
         margin-bottom: 0.8vw;
     }
@@ -1395,32 +1421,32 @@ form button:active{
         font-weight: 600;
         color: #111;
         outline: none;
-        width: 52vw;
+        width: 63vw;
     }
 
     #participant-names>input::-webkit-input-placeholder {
         color: #979797;
-        font-size: 2.1vw;
+        font-size: 2.4vw;
     }
 
     #participant-names>input::-moz-placeholder {
         color: #979797;
-        font-size: 2.1vw;
+        font-size: 2.4vw;
     }
 
     #participant-names>input:-ms-input-placeholder {
         color: #979797;
-        font-size: 2.1vw;
+        font-size: 2.4vw;
     }
 
     #participant-names>input::-ms-input-placeholder {
         color: #979797;
-        font-size: 2.1vw;
+        font-size: 2.4vw;
     }
 
     #participant-names>input::placeholder {
         color: #979797;
-        font-size: 2.1vw;
+        font-size: 2.4vw;
     }
 
     #participants-details {
@@ -1433,26 +1459,26 @@ form button:active{
 
     #participants-details h6 {
         display: inline-block;
-        font-size: 2.5vw;
-        width: 50%;
+        font-size: 2.8vw;
+        width: 70%;
         font-weight: 600;
         /* background-color: red; */
     }
 
     #participants-details input {
         display: inline-block;
-        width: 60%;
-        padding: 1vw 3vw;
-        margin-top: 1vw;
+        padding: 1.6vw 3.5vw;
+        margin-top: 1.5vw;
         border-radius: 3px;
         border: none;
-        font-size: 2vw;
+        font-size: 2.7vw;
         border: none;
         font-weight: 600;
         color: #111;
         outline: none;
-        margin-left: 5vw;
-        width: 27vw;
+        /* margin-left: 5vw; */
+        width: 62vw;
+        margin-bottom: 2vw;
     }
 
     #participants-details input::-webkit-file-upload-button {
@@ -1461,33 +1487,31 @@ form button:active{
         padding: 1vw 2vw;
         cursor: pointer;
         font-weight: 700;
+        font-size: 2.2vw;
         color: #979797;
         border-radius: 50px;
     }
 
+
     #participants-details input::-webkit-input-placeholder {
         color: #979797;
-        font-size: 1.55vw;
     }
 
     #participants-details input::-moz-placeholder {
         color: #979797;
-        font-size: 1.55vw;
     }
 
     #participants-details input:-ms-input-placeholder {
         color: #979797;
-        font-size: 1.55vw;
     }
 
     #participants-details input::-ms-input-placeholder {
         color: #979797;
-        font-size: 1.55vw;
     }
 
     #participants-details input::placeholder {
         color: #979797;
-        font-size: 1.55vw;
+        font-size: 2.1vw;
     }
 
     form button {

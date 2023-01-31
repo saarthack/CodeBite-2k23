@@ -1,4 +1,4 @@
-(function () {
+function init() {
   gsap.registerPlugin(ScrollTrigger);
 
   // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
@@ -52,7 +52,8 @@
   document.querySelector("#nav img").addEventListener("click", function () {
     locoScroll.scrollTo(0,0)
   });
-})();
+}
+// init()
 
 const random_char = () => {
   const possible =
@@ -142,7 +143,7 @@ images.forEach(function (elem) {
   gsap.to(elem, {
     scrollTrigger: {
       trigger: "#options",
-      scroller: "#main",
+      scroller: "body",
       // markers:true,
       scrub: 2,
     },
@@ -154,7 +155,7 @@ gsap.to("#page3>img", {
   rotate: "40deg",
   scrollTrigger: {
     trigger: "#page3>img",
-    scroller: "#main",
+    scroller: "body",
     scrub: 2,
     // markers:true
   },
@@ -164,7 +165,7 @@ gsap.to("#nav", {
   duration: 0.1,
   scrollTrigger: {
     trigger: "#page1 h1",
-    scroller: "#main",
+    scroller: "body",
     // markers:true,
     start: "top 2%",
     end: "top 2%",
