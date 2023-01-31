@@ -71,7 +71,7 @@ body::-webkit-scrollbar{
     width: 8px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: rgba(65, 65, 65, 0.288);
+    background-color: rgba(65, 65, 65, 0.4);
     border-radius: 50px;
 }
 
@@ -338,6 +338,7 @@ body::-webkit-scrollbar-thumb{
 #page4 {
     min-height: 100vh;
     width: 100%;
+    margin-bottom: 2vh;
     position: relative;
 }
 
@@ -456,6 +457,7 @@ body::-webkit-scrollbar-thumb{
 #page5 {
     min-height: 110vh;
     width: 100%;
+    margin-bottom: 5vh;
     padding: 1vw 7vw;
     position: relative;
     background-image: url(./prizes.png);
@@ -1097,6 +1099,7 @@ form button:active{
     }
 
     #page4 {
+        margin-bottom: 6vw;
         min-height: 80vh;
         width: 100%;
         position: relative;
@@ -1192,13 +1195,14 @@ form button:active{
     }
 
     #page5 {
-        min-height: 100vh;
+        min-height: 88vh;
         width: 100%;
-        margin-bottom: 5vw;
+        margin-bottom: 10vw;
         padding: 1vw 7vw;
         position: relative;
-        background-image: url(./prizes-p.png);
+        background-image: url(./prize-p.png);
         background-size: cover;
+        background-position: center;
     }
 
     #page5 h1 {
